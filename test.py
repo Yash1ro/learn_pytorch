@@ -11,7 +11,7 @@ print(img)
 transform = torchvision.transforms.Compose(
     [torchvision.transforms.Resize((32, 32)),
      torchvision.transforms.ToTensor(),
-    ]
+     ]
 )
 
 img = transform(img)
@@ -47,4 +47,3 @@ with torch.no_grad():
 print(output)
 
 print(output.argmax(1))
-
